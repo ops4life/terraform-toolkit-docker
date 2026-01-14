@@ -45,7 +45,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker buildx build --platform linux/${{ matrix.architecture }} \
-            -t duyluann/terraform-toolkit:pr-test-${{ matrix.architecture }} \
+            -t ops4life/terraform-toolkit:pr-test-${{ matrix.architecture }} \
             --load \
             --cache-from type=local,src=/tmp/.buildx-cache \
             --cache-to type=local,dest=/tmp/.buildx-cache-new,mode=max \
@@ -53,7 +53,7 @@ jobs:
 
       - name: Save Docker image to tar
         run: |
-          docker save duyluann/terraform-toolkit:pr-test-${{ matrix.architecture }} | gzip > /tmp/image-${{ matrix.architecture }}.tar.gz
+          docker save ops4life/terraform-toolkit:pr-test-${{ matrix.architecture }} | gzip > /tmp/image-${{ matrix.architecture }}.tar.gz
 
       - name: Upload Docker image as artifact
         uses: actions/upload-artifact@v6

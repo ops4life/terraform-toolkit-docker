@@ -152,21 +152,21 @@ make terragrunt-apply
 ### Test Latest Version
 
 ```bash
-export DOCKER_IMAGE=duyluann/terraform-toolkit:latest
+export DOCKER_IMAGE=ops4life/terraform-toolkit:latest
 make test-versions
 ```
 
 ### Test Specific Version
 
 ```bash
-export DOCKER_IMAGE=duyluann/terraform-toolkit:1.63.4
+export DOCKER_IMAGE=ops4life/terraform-toolkit:1.63.4
 make test-versions
 ```
 
 ### Test with Make Parameter
 
 ```bash
-make test-versions DOCKER_IMAGE=duyluann/terraform-toolkit:1.63.4
+make test-versions DOCKER_IMAGE=ops4life/terraform-toolkit:1.63.4
 ```
 
 ## Interactive Shell Access
@@ -342,7 +342,7 @@ newgrp docker
 
 ```bash
 # Pull the image
-docker pull duyluann/terraform-toolkit:latest
+docker pull ops4life/terraform-toolkit:latest
 
 # Verify image exists
 docker images | grep terraform-toolkit
@@ -388,7 +388,7 @@ docker run --rm \
   -v $(pwd):/workspace \
   -v ~/.aws:/root/.aws \
   -w /workspace \
-  duyluann/terraform-toolkit:latest \
+  ops4life/terraform-toolkit:latest \
   terraform plan
 ```
 
@@ -408,7 +408,7 @@ mkdir -p test/policies
 docker run --rm \
   -v $(pwd):/workspace \
   -w /workspace \
-  duyluann/terraform-toolkit:latest \
+  ops4life/terraform-toolkit:latest \
   checkov -d . --external-checks-dir policies
 ```
 
@@ -454,17 +454,17 @@ Generate test reports:
 ```bash
 # TFLint with JSON output
 docker run --rm -v $(pwd):/workspace -w /workspace \
-  duyluann/terraform-toolkit:latest \
+  ops4life/terraform-toolkit:latest \
   tflint --format json > tflint-report.json
 
 # Checkov with JSON output
 docker run --rm -v $(pwd):/workspace -w /workspace \
-  duyluann/terraform-toolkit:latest \
+  ops4life/terraform-toolkit:latest \
   checkov -d . -o json > checkov-report.json
 
 # Trivy with JSON output
 docker run --rm -v $(pwd):/workspace -w /workspace \
-  duyluann/terraform-toolkit:latest \
+  ops4life/terraform-toolkit:latest \
   trivy fs . -f json > trivy-report.json
 ```
 

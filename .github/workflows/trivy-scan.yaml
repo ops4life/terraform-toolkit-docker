@@ -37,10 +37,10 @@ jobs:
           # Load from artifact if tag is pr-test
           if [ "$IMAGE_TAG" = "pr-test" ]; then
             echo "load_from_artifact=true" >> $GITHUB_OUTPUT
-            echo "image_ref=duyluann/terraform-toolkit:pr-test-${{ matrix.architecture }}" >> $GITHUB_OUTPUT
+            echo "image_ref=ops4life/terraform-toolkit:pr-test-${{ matrix.architecture }}" >> $GITHUB_OUTPUT
           else
             echo "load_from_artifact=false" >> $GITHUB_OUTPUT
-            echo "image_ref=duyluann/terraform-toolkit:${IMAGE_TAG}-${{ matrix.architecture }}" >> $GITHUB_OUTPUT
+            echo "image_ref=ops4life/terraform-toolkit:${IMAGE_TAG}-${{ matrix.architecture }}" >> $GITHUB_OUTPUT
           fi
 
       - name: Download Docker image artifact

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository builds a Docker image (`duyluann/terraform-toolkit`) that bundles Terraform infrastructure tools into a single container. The image includes Terraform, Terragrunt, Checkov, TFLint, terraform-docs, Trivy, AWS CLI, eksctl, and pre-commit.
+This repository builds a Docker image (`ops4life/terraform-toolkit`) that bundles Terraform infrastructure tools into a single container. The image includes Terraform, Terragrunt, Checkov, TFLint, terraform-docs, Trivy, AWS CLI, eksctl, and pre-commit.
 
 **Note**: TFSec has been removed as it's deprecated. Trivy now provides Terraform security scanning functionality (use `trivy config` for Terraform scanning).
 
@@ -28,7 +28,7 @@ The repository uses GitHub Actions for automated workflows:
 **build-tf-toolkit-image.yaml**: Multi-platform Docker image build
 - Builds for both amd64 and arm64 architectures in parallel
 - Uses Docker Buildx with digest-based approach for multi-arch manifests
-- Pushes to Docker Hub (duyluann/terraform-toolkit)
+- Pushes to Docker Hub (ops4life/terraform-toolkit)
 - Triggered on: version tags (v*), main branch pushes, manual dispatch
 
 **check-tool-updates.yaml**: Automated dependency updates
@@ -117,7 +117,7 @@ pre-commit run trailing-whitespace --all-files
 ## Important Notes
 
 - **Multi-arch builds**: The build workflow creates separate images for amd64 and arm64, then merges them into a single manifest
-- **Registry**: Images are pushed to Docker Hub at `duyluann/terraform-toolkit`
+- **Registry**: Images are pushed to Docker Hub at `ops4life/terraform-toolkit`
 - **Auto-merge**: Tool update PRs are automatically approved and merged using the WORKFLOW_TOKEN secret
 - **Version tagging**: Docker images are tagged with git tags (semver pattern) and `latest`
 - **Non-root user**: The container runs as `tf-user` (UID 1000) by default for security
