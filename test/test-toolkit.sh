@@ -4,7 +4,7 @@ set -e
 # Test script for terraform-toolkit Docker image
 # This script tests all tools included in the image
 
-DOCKER_IMAGE="${DOCKER_IMAGE:-duyluann/terraform-toolkit:latest}"
+DOCKER_IMAGE="${DOCKER_IMAGE:-ops4life/terraform-toolkit:latest}"
 WORK_DIR="/workspace"
 
 echo "========================================"

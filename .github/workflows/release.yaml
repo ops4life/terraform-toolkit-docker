@@ -58,8 +58,8 @@ jobs:
 
           Pull this release:
           ```bash
-          docker pull duyluann/terraform-toolkit:${RELEASE_VERSION}
-          docker pull duyluann/terraform-toolkit:latest
+          docker pull ops4life/terraform-toolkit:${RELEASE_VERSION}
+          docker pull ops4life/terraform-toolkit:latest
           ```
 
           ## 📦 Tool Versions
@@ -80,16 +80,16 @@ jobs:
 
           ```bash
           # Run Terraform
-          docker run -v $(pwd):/workspace -w /workspace duyluann/terraform-toolkit:${RELEASE_VERSION} terraform init
+          docker run -v $(pwd):/workspace -w /workspace ops4life/terraform-toolkit:${RELEASE_VERSION} terraform init
 
           # Run Terragrunt
-          docker run -v $(pwd):/workspace -w /workspace duyluann/terraform-toolkit:${RELEASE_VERSION} terragrunt plan
+          docker run -v $(pwd):/workspace -w /workspace ops4life/terraform-toolkit:${RELEASE_VERSION} terragrunt plan
 
           # Security scan with Checkov
-          docker run -v $(pwd):/workspace -w /workspace duyluann/terraform-toolkit:${RELEASE_VERSION} checkov -d .
+          docker run -v $(pwd):/workspace -w /workspace ops4life/terraform-toolkit:${RELEASE_VERSION} checkov -d .
           ```
 
-          See the [Dockerfile](https://github.com/duyluann/terraform-toolkit-docker/blob/v${RELEASE_VERSION}/Dockerfile) for complete tool list and versions.
+          See the [Dockerfile](https://github.com/ops4life/terraform-toolkit-docker/blob/v${RELEASE_VERSION}/Dockerfile) for complete tool list and versions.
           EOF
 
           # Substitute environment variables safely using envsubst

@@ -3,7 +3,7 @@
 .PHONY: help test test-versions clean init validate plan apply destroy fmt lint security docs
 
 # Docker image configuration
-DOCKER_IMAGE ?= duyluann/terraform-toolkit:latest
+DOCKER_IMAGE ?= ops4life/terraform-toolkit:latest
 WORK_DIR := /workspace
 
 # Docker run command

@@ -1,8 +1,8 @@
 # 🛠️ Terraform Toolkit Docker Image
 
-[![CI](https://github.com/duyluann/terraform-toolkit-docker/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/duyluann/terraform-toolkit-docker/actions/workflows/ci.yaml)
-[![Build](https://github.com/duyluann/terraform-toolkit-docker/actions/workflows/build-tf-toolkit-image.yaml/badge.svg?branch=main)](https://github.com/duyluann/terraform-toolkit-docker/actions/workflows/build-tf-toolkit-image.yaml)
-[![Test](https://github.com/duyluann/terraform-toolkit-docker/actions/workflows/test-image.yaml/badge.svg?branch=main)](https://github.com/duyluann/terraform-toolkit-docker/actions/workflows/test-image.yaml)
+[![CI](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/ci.yaml)
+[![Build](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/build-tf-toolkit-image.yaml/badge.svg?branch=main)](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/build-tf-toolkit-image.yaml)
+[![Test](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/test-image.yaml/badge.svg?branch=main)](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/test-image.yaml)
 
 This repository provides a Docker image for a comprehensive Terraform toolkit. It bundles essential Terraform-related tools such as Terraform, Terragrunt, Checkov, TFDoc, TFLint, and Trivy to streamline infrastructure management, security checks, and linting.
 
@@ -24,19 +24,19 @@ Make sure you have Docker installed on your system before using this image.
 #### Install Docker
 📥 Pulling the Docker Image
 
-The image repository: [terraform-toolkit](https://hub.docker.com/r/duyluann/terraform-toolkit) 📦
+The image repository: [terraform-toolkit](https://hub.docker.com/r/ops4life/terraform-toolkit) 📦
 
 To pull the pre-built Docker image from Docker Hub:
 
 ```bash
-docker pull duyluann/terraform-toolkit:latest
+docker pull ops4life/terraform-toolkit:latest
 ```
 
 #### 🏃 Usage
 To run the container:
 
 ```bash
-docker run -it duyluann/terraform-toolkit:latest
+docker run -it ops4life/terraform-toolkit:latest
 ```
 
 You can then use the following tools from within the container:
@@ -54,7 +54,7 @@ You can then use the following tools from within the container:
 Run Terraform commands inside the container:
 
 ```bash
-docker run -v $(pwd):/workspace -w /workspace duyluann/terraform-toolkit:latest terraform init
+docker run -v $(pwd):/workspace -w /workspace ops4life/terraform-toolkit:latest terraform init
 ```
 
 This command mounts your current working directory (pwd) into the container’s /workspace directory and runs terraform init.

@@ -69,7 +69,7 @@ build (arm64) ──┘
 ```
 
 **Environment Variables**:
-- `REGISTRY_IMAGE`: Docker Hub repository (duyluann/terraform-toolkit)
+- `REGISTRY_IMAGE`: Docker Hub repository (ops4life/terraform-toolkit)
 
 **Secrets Required**:
 - `DOCKER_USERNAME`: Docker Hub username
@@ -311,7 +311,7 @@ gh run view <run-id> --log --job=<job-id>
 **Issue**: Tests fail in CI but pass locally
 
 **Solutions**:
-1. Ensure image is pulled: `docker pull duyluann/terraform-toolkit:latest`
+1. Ensure image is pulled: `docker pull ops4life/terraform-toolkit:latest`
 2. Check test configuration matches CI environment
 3. Verify all test files are committed
 4. Check for platform-specific issues (amd64 vs arm64)
