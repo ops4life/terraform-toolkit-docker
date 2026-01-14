@@ -3,6 +3,9 @@
 [![CI](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/ci.yaml)
 [![Build](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/build-tf-toolkit-image.yaml/badge.svg?branch=main)](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/build-tf-toolkit-image.yaml)
 [![Test](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/test-image.yaml/badge.svg?branch=main)](https://github.com/ops4life/terraform-toolkit-docker/actions/workflows/test-image.yaml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ops4life/terraform-toolkit)](https://hub.docker.com/r/ops4life/terraform-toolkit)
+[![Docker Image Version](https://img.shields.io/docker/v/ops4life/terraform-toolkit?sort=semver)](https://hub.docker.com/r/ops4life/terraform-toolkit)
+[![License](https://img.shields.io/github/license/ops4life/terraform-toolkit-docker)](LICENSE)
 
 This repository provides a Docker image for a comprehensive Terraform toolkit. It bundles essential Terraform-related tools such as Terraform, Terragrunt, Checkov, TFDoc, TFLint, and Trivy to streamline infrastructure management, security checks, and linting.
 
