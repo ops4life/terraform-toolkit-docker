@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.81.1](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.81.0...v1.81.1) (2026-01-14)
+
+
+### Bug Fixes
+
+* update LICENSE workflow to use org name instead of username ([c29325c](https://github.com/ops4life/terraform-toolkit-docker/commit/c29325cad07c4caa92fadc700142480e0c9af804))
+
 ## [1.81.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.80.0...v1.81.0) (2026-01-14)
 
 
