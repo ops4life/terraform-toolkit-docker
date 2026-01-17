@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.81.2](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.81.1...v1.81.2) (2026-01-17)
+
+
+### Bug Fixes
+
+* Add lint-pr dependency to CI summary workflow ([55a5578](https://github.com/ops4life/terraform-toolkit-docker/commit/55a55785560142f76220ad800616078cdc9f9b63))
+
+
+### Documentation
+
+* add Docker Hub and license badges to README ([d306dc3](https://github.com/ops4life/terraform-toolkit-docker/commit/d306dc3f181e03c4421e4b270e715ee2d6028287))
+
 ## [1.81.1](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.81.0...v1.81.1) (2026-01-14)
 
 
