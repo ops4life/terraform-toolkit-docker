@@ -128,6 +128,7 @@ jobs:
     name: CI Summary
     runs-on: ubuntu-24.04
     needs:
+      - lint-pr
       - pre-commit
       - dockerfile-lint
       - security-gitleaks
@@ -145,6 +146,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
           echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Lint PR Title | ${{ needs.lint-pr.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Pre-commit | ${{ needs.pre-commit.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Dockerfile Lint | ${{ needs.dockerfile-lint.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Gitleaks | ${{ needs.security-gitleaks.result }} |" >> $GITHUB_STEP_SUMMARY
@@ -161,18 +163,24 @@ jobs:
           if [ "${{ needs.pre-commit.result }}" != "success" ] || \
              [ "${{ needs.dockerfile-lint.result }}" != "success" ] || \
              [ "${{ needs.security-gitleaks.result }}" != "success" ] || \
-             [ "${{ needs.security-trivy.result }}" != "success" ] || \
-             [ "${{ needs.test-terraform-configs.result }}" != "success" ] || \
-             [ "${{ needs.build-pr-image.result }}" != "success" ] || \
-             [ "${{ needs.test-image.result }}" != "success" ]; then
-            echo "❌ CI checks failed"
+             [ "${{ needs.test-terraform-configs.result }}" != "success" ]; then
+            echo "❌ Required CI checks failed"
             exit 1
           fi
 
-          # Check optional jobs (only if they ran)
-          if [ "${{ needs.security-codeql.result }}" == "failure" ] || \
+          # Check PR-conditional jobs (must be success or skipped)
+          if ([ "${{ needs.security-trivy.result }}" != "success" ] && [ "${{ needs.security-trivy.result }}" != "skipped" ]) || \
+             ([ "${{ needs.build-pr-image.result }}" != "success" ] && [ "${{ needs.build-pr-image.result }}" != "skipped" ]) || \
+             ([ "${{ needs.test-image.result }}" != "success" ] && [ "${{ needs.test-image.result }}" != "skipped" ]); then
+            echo "❌ PR-conditional CI checks failed"
+            exit 1
+          fi
+
+          # Check optional jobs (only if they ran and failed)
+          if [ "${{ needs.lint-pr.result }}" == "failure" ] || \
+             [ "${{ needs.security-codeql.result }}" == "failure" ] || \
              [ "${{ needs.dependency-review.result }}" == "failure" ]; then
-            echo "❌ CI checks failed"
+            echo "❌ Optional CI checks failed"
             exit 1
           fi
 
