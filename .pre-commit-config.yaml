@@ -5,3 +5,12 @@ repos:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: check-yaml
+        exclude: mkdocs\.yml
+-   repo: local
+    hooks:
+    -   id: mkdocs-build
+        name: mkdocs build
+        entry: mkdocs build --strict
+        language: system
+        pass_filenames: false
+        files: '(docs/|mkdocs\.yml|requirements\.txt)'

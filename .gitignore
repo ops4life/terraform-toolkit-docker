@@ -98,3 +98,6 @@ gitleaks-report.txt
 test_release_notes.sh
 release_body.md
 release_body_final.md
+
+# MkDocs
+site/
