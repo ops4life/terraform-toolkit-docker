@@ -9,3 +9,5 @@ README.md
 .github/workflows/
 .gitignore
 .releaserc.json
+docs/
+mkdocs.yml
