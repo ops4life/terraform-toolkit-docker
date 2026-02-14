@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.85.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.84.0...v1.85.0) (2026-02-14)
+
+
+### Features
+
+* add MkDocs documentation system with GitHub Pages deployment ([#7](https://github.com/ops4life/terraform-toolkit-docker/issues/7)) ([33cfa33](https://github.com/ops4life/terraform-toolkit-docker/commit/33cfa330e9b7eb5bd369d17c3c49dc94d7795ba5))
+* Update tool versions ([#8](https://github.com/ops4life/terraform-toolkit-docker/issues/8)) ([750bdde](https://github.com/ops4life/terraform-toolkit-docker/commit/750bddecbe3508315e11ee2e9a733a2e7e6c5f2b))
+
+
+### Maintenance
+
+* **deps:** bump aquasecurity/trivy-action from 0.33.1 to 0.34.0 ([#6](https://github.com/ops4life/terraform-toolkit-docker/issues/6)) ([a38efba](https://github.com/ops4life/terraform-toolkit-docker/commit/a38efba096a12592502f6852881a263ddabd7177))
+
+
+### Documentation
+
+* auto-configure repository URLs [skip ci] ([e900401](https://github.com/ops4life/terraform-toolkit-docker/commit/e900401cc1d65dbc60c318f9c666975f153ff117))
+
 ## [1.84.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.83.0...v1.84.0) (2026-02-09)
 
 
