@@ -1,8 +1,8 @@
 site_name: Terraform Toolkit Docker
 site_description: A comprehensive Docker image bundling Terraform infrastructure tools
-site_url: https://username.github.io/github-repo-template/
-repo_url: https://github.com/username/github-repo-template
-repo_name: username/github-repo-template
+site_url: https://ops4life.github.io/terraform-toolkit-docker/
+repo_url: https://github.com/ops4life/terraform-toolkit-docker
+repo_name: ops4life/terraform-toolkit-docker
 edit_uri: edit/main/docs/
 
 theme:
@@ -87,7 +87,7 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/username/github-repo-template
+      link: https://github.com/ops4life/terraform-toolkit-docker
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/r/ops4life/terraform-toolkit
 
