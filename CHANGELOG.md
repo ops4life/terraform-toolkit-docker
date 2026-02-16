@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.86.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.85.0...v1.86.0) (2026-02-16)
+
+
+### Features
+
+* Update tool versions ([#9](https://github.com/ops4life/terraform-toolkit-docker/issues/9)) ([fd7ad5c](https://github.com/ops4life/terraform-toolkit-docker/commit/fd7ad5c01e173c7f76abfc47b5f93539ef7ecb7d))
+
 ## [1.85.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.84.0...v1.85.0) (2026-02-14)
 
 
