@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.87.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.86.0...v1.87.0) (2026-02-23)
+
+
+### Features
+
+* Update tool versions ([#15](https://github.com/ops4life/terraform-toolkit-docker/issues/15)) ([d0adf89](https://github.com/ops4life/terraform-toolkit-docker/commit/d0adf89e04dd3e09cb5086ab419275799afc8720))
+
+
+### Maintenance
+
+* **deps:** bump actions/stale from 10.1.1 to 10.2.0 ([#13](https://github.com/ops4life/terraform-toolkit-docker/issues/13)) ([d603a95](https://github.com/ops4life/terraform-toolkit-docker/commit/d603a95d961b7404c09e27c93701ae5a5e69d89f))
+* **deps:** bump actions/upload-pages-artifact from 3 to 4 ([#10](https://github.com/ops4life/terraform-toolkit-docker/issues/10)) ([07560e1](https://github.com/ops4life/terraform-toolkit-docker/commit/07560e1ad1d717f9c2e985ed2ca6c27063ed85ce))
+* **deps:** bump aquasecurity/trivy-action from 0.34.0 to 0.34.1 ([#14](https://github.com/ops4life/terraform-toolkit-docker/issues/14)) ([5131fa3](https://github.com/ops4life/terraform-toolkit-docker/commit/5131fa398673b7183f4e04a22dcf9439683dc8be))
+
 ## [1.86.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.85.0...v1.86.0) (2026-02-16)
 
 
