@@ -61,7 +61,7 @@ jobs:
 
       - name: Download Docker image artifact
         if: steps.image.outputs.load_from_artifact == 'true'
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: docker-image-${{ steps.image.outputs.tag == 'pr-test-amd64' && 'amd64' || 'arm64' }}
           path: /tmp
@@ -160,7 +160,7 @@ jobs:
 
       - name: Download Docker image artifact
         if: steps.image.outputs.load_from_artifact == 'true'
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: docker-image-${{ steps.image.outputs.tag == 'pr-test-amd64' && 'amd64' || 'arm64' }}
           path: /tmp
@@ -275,7 +275,7 @@ jobs:
 
       - name: Download Docker image artifact
         if: steps.image.outputs.load_from_artifact == 'true'
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: docker-image-${{ steps.image.outputs.tag == 'pr-test-amd64' && 'amd64' || 'arm64' }}
           path: /tmp
@@ -377,7 +377,7 @@ jobs:
 
       - name: Download Docker image artifact
         if: steps.image.outputs.load_from_artifact == 'true'
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: docker-image-${{ steps.image.outputs.tag == 'pr-test-amd64' && 'amd64' || 'arm64' }}
           path: /tmp
@@ -472,7 +472,7 @@ jobs:
 
       - name: Download Docker image artifact
         if: steps.image.outputs.load_from_artifact == 'true'
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: docker-image-${{ steps.image.outputs.tag == 'pr-test-amd64' && 'amd64' || 'arm64' }}
           path: /tmp
@@ -564,7 +564,7 @@ jobs:
 
       - name: Download Docker image artifact
         if: steps.image.outputs.load_from_artifact == 'true'
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: docker-image-${{ steps.image.outputs.tag == 'pr-test-amd64' && 'amd64' || 'arm64' }}
           path: /tmp
@@ -609,7 +609,7 @@ jobs:
     if: always()
     steps:
       - name: Download All Artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           path: /tmp/test-results
           pattern: "{terraform-plan,tflint-results,security-scan-results,terraform-docs}-*"
