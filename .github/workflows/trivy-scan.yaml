@@ -109,7 +109,7 @@ jobs:
 
       - name: Upload Trivy scan artifacts
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: trivy-container-scan-${{ matrix.architecture }}
           path: trivy-results-${{ matrix.architecture }}.json

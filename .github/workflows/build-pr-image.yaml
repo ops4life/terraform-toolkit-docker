@@ -56,7 +56,7 @@ jobs:
           docker save ops4life/terraform-toolkit:pr-test-${{ matrix.architecture }} | gzip > /tmp/image-${{ matrix.architecture }}.tar.gz
 
       - name: Upload Docker image as artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: docker-image-${{ matrix.architecture }}
           path: /tmp/image-${{ matrix.architecture }}.tar.gz
