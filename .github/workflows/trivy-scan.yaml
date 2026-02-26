@@ -45,7 +45,7 @@ jobs:
 
       - name: Download Docker image artifact
         if: steps.tag.outputs.load_from_artifact == 'true'
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: docker-image-${{ matrix.architecture }}
           path: /tmp
