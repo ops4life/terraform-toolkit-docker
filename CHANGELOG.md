@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.88.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.87.0...v1.88.0) (2026-03-02)
+
+
+### Features
+
+* Update tool versions ([#19](https://github.com/ops4life/terraform-toolkit-docker/issues/19)) ([70753df](https://github.com/ops4life/terraform-toolkit-docker/commit/70753df3b7a2611be50b9818b3ea34cf82573537))
+
+
+### Maintenance
+
+* **deps:** bump actions/checkout from 4 to 6 ([#12](https://github.com/ops4life/terraform-toolkit-docker/issues/12)) ([9cfef4b](https://github.com/ops4life/terraform-toolkit-docker/commit/9cfef4b9ebf7e0b51fbd1a55405b1b9d44c3d6f6))
+* **deps:** bump actions/download-artifact from 7 to 8 ([#17](https://github.com/ops4life/terraform-toolkit-docker/issues/17)) ([6a73244](https://github.com/ops4life/terraform-toolkit-docker/commit/6a73244003b1fe14560da11f73ea7d3bafd5e98c))
+* **deps:** bump hashicorp/setup-terraform from 3 to 4 ([#16](https://github.com/ops4life/terraform-toolkit-docker/issues/16)) ([f8f2b67](https://github.com/ops4life/terraform-toolkit-docker/commit/f8f2b678bbcc7f3dc1952edd6e4ca356965d0ab2))
+
 ## [1.87.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.86.0...v1.87.0) (2026-02-23)
 
 
