@@ -81,7 +81,7 @@ jobs:
             --cache-to type=local,dest=/tmp/.buildx-cache,mode=max .
 
       - name: Run Trivy vulnerability scanner (JSON)
-        uses: aquasecurity/trivy-action@0.34.1
+        uses: aquasecurity/trivy-action@0.34.2
         with:
           image-ref: ${{ steps.tag.outputs.image_ref }}
           format: 'json'
@@ -92,7 +92,7 @@ jobs:
           trivyignores: '.trivyignore'
 
       - name: Run Trivy vulnerability scanner (SARIF)
-        uses: aquasecurity/trivy-action@0.34.1
+        uses: aquasecurity/trivy-action@0.34.2
         with:
           image-ref: ${{ steps.tag.outputs.image_ref }}
           format: 'sarif'
