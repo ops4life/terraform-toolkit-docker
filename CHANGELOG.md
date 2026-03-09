@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.89.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.88.0...v1.89.0) (2026-03-09)
+
+
+### Features
+
+* Update tool versions ([#26](https://github.com/ops4life/terraform-toolkit-docker/issues/26)) ([f03b097](https://github.com/ops4life/terraform-toolkit-docker/commit/f03b0979fbe67e10c8629e1932b5d25e86f02823))
+
+
+### Maintenance
+
+* **deps:** bump aquasecurity/trivy-action from 0.34.1 to 0.34.2 ([#20](https://github.com/ops4life/terraform-toolkit-docker/issues/20)) ([c97d83e](https://github.com/ops4life/terraform-toolkit-docker/commit/c97d83e5a946cbd6e81918ca446fe4a228d8027e))
+* **deps:** bump docker/login-action from 3 to 4 ([#22](https://github.com/ops4life/terraform-toolkit-docker/issues/22)) ([4d88458](https://github.com/ops4life/terraform-toolkit-docker/commit/4d88458d478181945784bb2fbc0366ffdeb18bd8))
+* **deps:** bump docker/setup-buildx-action from 3 to 4 ([#24](https://github.com/ops4life/terraform-toolkit-docker/issues/24)) ([f2f1d0b](https://github.com/ops4life/terraform-toolkit-docker/commit/f2f1d0b0db935c8866b62077497a476c94dba23c))
+* **deps:** bump docker/setup-qemu-action from 3 to 4 ([#21](https://github.com/ops4life/terraform-toolkit-docker/issues/21)) ([0ccead5](https://github.com/ops4life/terraform-toolkit-docker/commit/0ccead5ad9da4a7040d53a86f14ba015c345cb5c))
+
 ## [1.88.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.87.0...v1.88.0) (2026-03-02)
 
 
