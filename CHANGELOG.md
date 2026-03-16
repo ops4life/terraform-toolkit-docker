@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.90.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.89.0...v1.90.0) (2026-03-16)
+
+
+### Features
+
+* Update tool versions ([#29](https://github.com/ops4life/terraform-toolkit-docker/issues/29)) ([f9d259c](https://github.com/ops4life/terraform-toolkit-docker/commit/f9d259ce0f9aa5d50b92778a91a8caf159d5c3de))
+
+
+### Maintenance
+
+* **deps:** bump aquasecurity/trivy-action from 0.34.2 to 0.35.0 ([#27](https://github.com/ops4life/terraform-toolkit-docker/issues/27)) ([c2ff6a0](https://github.com/ops4life/terraform-toolkit-docker/commit/c2ff6a082e13d6456fd0958e62fabba6b86e38d3))
+* **deps:** bump marocchino/sticky-pull-request-comment from 2 to 3 ([#28](https://github.com/ops4life/terraform-toolkit-docker/issues/28)) ([8e5e596](https://github.com/ops4life/terraform-toolkit-docker/commit/8e5e596dd59f7d553ceff82b70225b898874e408))
+
 ## [1.89.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.88.0...v1.89.0) (2026-03-09)
 
 
