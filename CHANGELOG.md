@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.94.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.93.0...v1.94.0) (2026-04-20)
+
+
+### Features
+
+* Update tool versions ([#36](https://github.com/ops4life/terraform-toolkit-docker/issues/36)) ([c66b194](https://github.com/ops4life/terraform-toolkit-docker/commit/c66b194f9c2d87c675dc078493a3ac8a7987039e))
+
+
+### Maintenance
+
+* **deps:** bump softprops/action-gh-release from 2 to 3 ([#34](https://github.com/ops4life/terraform-toolkit-docker/issues/34)) ([7370cd0](https://github.com/ops4life/terraform-toolkit-docker/commit/7370cd0c3051b1681c9776ce9238d58c7265722f))
+
 ## [1.93.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.92.0...v1.93.0) (2026-04-13)
 
 
