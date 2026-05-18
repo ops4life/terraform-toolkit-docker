@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.97.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.96.0...v1.97.0) (2026-05-18)
+
+
+### Features
+
+* Update tool versions ([#41](https://github.com/ops4life/terraform-toolkit-docker/issues/41)) ([ac169c2](https://github.com/ops4life/terraform-toolkit-docker/commit/ac169c22a9b569df6f588d8699b4cbb8e5e86bc9))
+
+
+### Maintenance
+
+* **deps:** bump actions/dependency-review-action from 4 to 5 ([#40](https://github.com/ops4life/terraform-toolkit-docker/issues/40)) ([8384278](https://github.com/ops4life/terraform-toolkit-docker/commit/83842781ad8a2b9f95b57953e07fb0994ed173c4))
+
 ## [1.96.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.95.0...v1.96.0) (2026-05-04)
 
 
