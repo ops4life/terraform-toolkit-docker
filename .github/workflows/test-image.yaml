@@ -30,7 +30,7 @@ jobs:
           - linux/arm64
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Prepare Platform Name
         run: |
@@ -129,7 +129,7 @@ jobs:
           - linux/arm64
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Prepare Platform Name
         run: |
@@ -244,7 +244,7 @@ jobs:
           - linux/arm64
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Prepare Platform Name
         run: |
@@ -346,7 +346,7 @@ jobs:
           - linux/arm64
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Prepare Platform Name
         run: |
@@ -441,7 +441,7 @@ jobs:
           - linux/arm64
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Prepare Platform Name
         run: |
@@ -533,7 +533,7 @@ jobs:
           - linux/arm64
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Prepare Platform Name
         run: |
