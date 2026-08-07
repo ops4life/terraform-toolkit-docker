@@ -36,7 +36,7 @@ jobs:
 
       - name: Upload Gitleaks SARIF to GitHub Security tab
         if: always()
-        uses: github/codeql-action/upload-sarif@v4.37.5
+        uses: github/codeql-action/upload-sarif@v4.37.6
         with:
           sarif_file: gitleaks-results.sarif
 
