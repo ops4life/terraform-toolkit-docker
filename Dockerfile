@@ -3,11 +3,11 @@ FROM alpine:3.20 AS builder
 
 # Set ARGs for tool versions
 ARG TERRAFORM_VERSION=1.15.8
-ARG TERRAGRUNT_VERSION=1.1.2
+ARG TERRAGRUNT_VERSION=1.1.3
 ARG TFDOCS_VERSION=0.24.0
 ARG TFLINT_VERSION=0.64.0
 ARG TRIVY_VERSION=0.69.3
-ARG EKSCTL_VERSION=0.229.0
+ARG EKSCTL_VERSION=0.230.0
 
 # Install build dependencies
 RUN apk add --no-cache wget curl tar gzip unzip
@@ -67,7 +67,7 @@ FROM ubuntu:22.04
 
 # Version args for Python packages
 ARG CHECKOV_VERSION=3.2.497
-ARG PRE_COMMIT_VERSION=4.6.1
+ARG PRE_COMMIT_VERSION=4.6.2
 
 # Add a non-root user
 ARG USERNAME=tf-user
