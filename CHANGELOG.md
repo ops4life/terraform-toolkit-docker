@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.110.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.109.0...v1.110.0) (2026-08-31)
+
+
+### Features
+
+* Update tool versions ([#70](https://github.com/ops4life/terraform-toolkit-docker/issues/70)) ([66d3fbd](https://github.com/ops4life/terraform-toolkit-docker/commit/66d3fbd6800be0782748f6f9e42b2e3de35f4805))
+
+
+### Maintenance
+
+* **deps:** bump github/codeql-action from 4.37.7 to 4.37.8 ([#68](https://github.com/ops4life/terraform-toolkit-docker/issues/68)) ([43cf621](https://github.com/ops4life/terraform-toolkit-docker/commit/43cf621e7dd020ac696612de0cb1cf8385ae76db))
+* **deps:** bump hadolint/hadolint-action from 3.4.0 to 3.5.0 ([#69](https://github.com/ops4life/terraform-toolkit-docker/issues/69)) ([4f871a3](https://github.com/ops4life/terraform-toolkit-docker/commit/4f871a3901acc12e5d0b2d6eb225f47c0ce79869))
+
 ## [1.109.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.108.0...v1.109.0) (2026-08-24)
 
 
