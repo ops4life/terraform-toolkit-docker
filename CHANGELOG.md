@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.115.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.114.0...v1.115.0) (2026-10-05)
+
+
+### Features
+
+* Update tool versions ([#80](https://github.com/ops4life/terraform-toolkit-docker/issues/80)) ([0b573d9](https://github.com/ops4life/terraform-toolkit-docker/commit/0b573d959a7e422bdd0dd5f4482da6478afdf351))
+
+
+### Maintenance
+
+* **deps:** bump github/codeql-action from 4.38.1 to 4.38.2 ([#79](https://github.com/ops4life/terraform-toolkit-docker/issues/79)) ([6c8b383](https://github.com/ops4life/terraform-toolkit-docker/commit/6c8b383476622b98470fe37cceabcafd8446debf))
+
 ## [1.114.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.113.0...v1.114.0) (2026-09-28)
 
 
