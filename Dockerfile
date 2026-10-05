@@ -2,12 +2,12 @@
 FROM alpine:3.20 AS builder
 
 # Set ARGs for tool versions
-ARG TERRAFORM_VERSION=1.16.4
+ARG TERRAFORM_VERSION=1.16.5
 ARG TERRAGRUNT_VERSION=1.1.6
 ARG TFDOCS_VERSION=0.24.0
 ARG TFLINT_VERSION=0.64.0
 ARG TRIVY_VERSION=0.69.3
-ARG EKSCTL_VERSION=0.230.0
+ARG EKSCTL_VERSION=0.231.0
 
 # Install build dependencies
 RUN apk add --no-cache wget curl tar gzip unzip
