@@ -67,7 +67,7 @@ FROM ubuntu:22.04
 
 # Version args for Python packages
 ARG CHECKOV_VERSION=3.2.497
-ARG PRE_COMMIT_VERSION=4.7.0
+ARG PRE_COMMIT_VERSION=4.6.2
 
 # Add a non-root user
 ARG USERNAME=tf-user
