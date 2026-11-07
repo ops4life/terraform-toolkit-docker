@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.117.0 (2026-11-07)
+
+* feat: Update tool versions (#86) ([0e7755f](https://github.com/ops4life/terraform-toolkit-docker/commit/0e7755f)), closes [#86](https://github.com/ops4life/terraform-toolkit-docker/issues/86)
+* feat: Update tool versions (#92) ([0db6dd4](https://github.com/ops4life/terraform-toolkit-docker/commit/0db6dd4)), closes [#92](https://github.com/ops4life/terraform-toolkit-docker/issues/92)
+* ci(release): push release commits with the ops4life-otto App token ([49b993f](https://github.com/ops4life/terraform-toolkit-docker/commit/49b993f))
+* chore: add CODEOWNERS to request duyluann review on all PRs ([d3002ae](https://github.com/ops4life/terraform-toolkit-docker/commit/d3002ae))
+* chore(deps): bump cycjimmy/semantic-release-action from 6 to 8 (#84) ([a8ec1f8](https://github.com/ops4life/terraform-toolkit-docker/commit/a8ec1f8)), closes [#84](https://github.com/ops4life/terraform-toolkit-docker/issues/84)
+* chore(deps): bump docker/login-action from 4.6.0 to 4.7.0 (#89) ([e62fc40](https://github.com/ops4life/terraform-toolkit-docker/commit/e62fc40)), closes [#89](https://github.com/ops4life/terraform-toolkit-docker/issues/89)
+* chore(deps): bump github/codeql-action from 4.38.3 to 4.39.0 (#83) ([d0b40a3](https://github.com/ops4life/terraform-toolkit-docker/commit/d0b40a3)), closes [#83](https://github.com/ops4life/terraform-toolkit-docker/issues/83)
+* chore(deps): bump github/codeql-action from 4.39.0 to 4.39.1 (#90) ([dd49508](https://github.com/ops4life/terraform-toolkit-docker/commit/dd49508)), closes [#90](https://github.com/ops4life/terraform-toolkit-docker/issues/90)
+* chore(deps): bump github/codeql-action from 4.39.1 to 4.39.2 (#93) ([ef7ada9](https://github.com/ops4life/terraform-toolkit-docker/commit/ef7ada9)), closes [#93](https://github.com/ops4life/terraform-toolkit-docker/issues/93)
+* fix(ci): install requirements.txt so the mkdocs pre-commit hook can run (#88) ([664c947](https://github.com/ops4life/terraform-toolkit-docker/commit/664c947)), closes [#88](https://github.com/ops4life/terraform-toolkit-docker/issues/88)
+
 ## [1.116.0](https://github.com/ops4life/terraform-toolkit-docker/compare/v1.115.0...v1.116.0) (2026-10-19)
 
 
