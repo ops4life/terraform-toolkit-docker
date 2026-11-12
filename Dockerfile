@@ -2,8 +2,8 @@
 FROM alpine:3.20 AS builder
 
 # Set ARGs for tool versions
-ARG TERRAFORM_VERSION=1.17.1
-ARG TERRAGRUNT_VERSION=1.2.1
+ARG TERRAFORM_VERSION=1.17.2
+ARG TERRAGRUNT_VERSION=1.2.2
 ARG TFDOCS_VERSION=0.24.0
 ARG TFLINT_VERSION=0.66.0
 ARG TRIVY_VERSION=0.69.3
@@ -63,7 +63,7 @@ RUN ARCH=$(cat /tmp/arch) && \
     rm eksctl_${PLATFORM}.tar.gz
 
 # Final stage - Ubuntu runtime image for full compatibility
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 # Version args for Python packages
 ARG CHECKOV_VERSION=3.2.497
@@ -86,6 +86,8 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     bash \
     curl \
     unzip && \
+    # ubuntu:24.04 ships an 'ubuntu' user at UID/GID 1000
+    (userdel -r ubuntu 2>/dev/null || true) && \
     groupadd --gid $USER_GID $USERNAME && \
     useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
 
@@ -110,7 +112,7 @@ RUN --mount=type=cache,target=/tmp/awscli-cache,sharing=locked \
 
 # Install Python packages with cache mount for faster builds
 RUN --mount=type=cache,target=/root/.cache/pip,sharing=locked \
-    pip3 install --prefer-binary \
+    pip3 install --prefer-binary --break-system-packages \
     checkov==${CHECKOV_VERSION} \
     pre-commit==${PRE_COMMIT_VERSION} && \
     # Remove Python cache and test files
