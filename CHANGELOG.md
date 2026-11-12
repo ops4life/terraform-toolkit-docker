@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.119.0 (2026-11-12)
+
+* feat: Update tool versions (#100) ([ebfb4e0](https://github.com/ops4life/terraform-toolkit-docker/commit/ebfb4e0)), closes [#100](https://github.com/ops4life/terraform-toolkit-docker/issues/100)
+* fix(docker): move base image to ubuntu:24.04 for pre-commit 4.7.0 (#99) ([5438ded](https://github.com/ops4life/terraform-toolkit-docker/commit/5438ded)), closes [#99](https://github.com/ops4life/terraform-toolkit-docker/issues/99)
+
 ## 1.118.0 (2026-11-09)
 
 * feat: Update tool versions (#94) ([f770d06](https://github.com/ops4life/terraform-toolkit-docker/commit/f770d06)), closes [#94](https://github.com/ops4life/terraform-toolkit-docker/issues/94)

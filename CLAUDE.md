@@ -13,7 +13,7 @@ This repository builds a Docker image (`ops4life/terraform-toolkit`) that bundle
 ### Core Components
 
 **Dockerfile**: Single-stage build that installs all tools with pinned versions specified as ARG variables at the top of the file. The build process:
-- Uses Ubuntu 22.04 as base image
+- Uses Ubuntu 24.04 as base image
 - Supports multi-architecture builds (linux/amd64 and linux/arm64)
 - Creates a non-root user (`tf-user`) for security
 - Downloads and installs binaries from official release pages
@@ -130,7 +130,7 @@ The Dockerfile uses a multi-stage build to minimize image size while maintaining
 
 1. **Multi-stage build**: Alpine builder stage downloads all binaries, Ubuntu runtime stage provides compatibility
 2. **Alpine builder**: Uses Alpine 3.20 (7MB) for downloading binaries (wget, curl, unzip)
-3. **Ubuntu runtime**: Uses Ubuntu 22.04 with --no-install-recommends for minimal dependencies
+3. **Ubuntu runtime**: Uses Ubuntu 24.04 with --no-install-recommends for minimal dependencies
 4. **Combined RUN layers**: Tool installations grouped into fewer RUN commands (10+ reduced to 6 layers)
 5. **--no-install-recommends**: APT packages installed without recommended packages to save space
 6. **--no-cache-dir**: Python pip installations don't cache downloaded packages (saves ~100MB+)
