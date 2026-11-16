@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.120.0 (2026-11-16)
+
+* feat: Update tool versions (#101) ([a018251](https://github.com/ops4life/terraform-toolkit-docker/commit/a018251)), closes [#101](https://github.com/ops4life/terraform-toolkit-docker/issues/101)
+* chore(ci): use the Otto GitHub App token in PR workflows (#98) ([839e6a2](https://github.com/ops4life/terraform-toolkit-docker/commit/839e6a2)), closes [#98](https://github.com/ops4life/terraform-toolkit-docker/issues/98)
+* chore(deps): bump docker/login-action from 4.7.0 to 4.8.0 (#96) ([372c39a](https://github.com/ops4life/terraform-toolkit-docker/commit/372c39a)), closes [#96](https://github.com/ops4life/terraform-toolkit-docker/issues/96)
+* chore(deps): bump github/codeql-action from 4.39.2 to 4.39.3 (#95) ([d73d758](https://github.com/ops4life/terraform-toolkit-docker/commit/d73d758)), closes [#95](https://github.com/ops4life/terraform-toolkit-docker/issues/95)
+* chore: set CODEOWNERS to the ops4life-admin team (#97) ([5e1ad8c](https://github.com/ops4life/terraform-toolkit-docker/commit/5e1ad8c)), closes [#97](https://github.com/ops4life/terraform-toolkit-docker/issues/97)
+
 ## 1.119.0 (2026-11-12)
 
 * feat: Update tool versions (#100) ([ebfb4e0](https://github.com/ops4life/terraform-toolkit-docker/commit/ebfb4e0)), closes [#100](https://github.com/ops4life/terraform-toolkit-docker/issues/100)
