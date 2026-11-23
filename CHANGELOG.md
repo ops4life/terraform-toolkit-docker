@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.121.0 (2026-11-23)
+
+* feat: Update tool versions (#102) ([21a82fb](https://github.com/ops4life/terraform-toolkit-docker/commit/21a82fb)), closes [#102](https://github.com/ops4life/terraform-toolkit-docker/issues/102)
+
 ## 1.120.0 (2026-11-16)
 
 * feat: Update tool versions (#101) ([a018251](https://github.com/ops4life/terraform-toolkit-docker/commit/a018251)), closes [#101](https://github.com/ops4life/terraform-toolkit-docker/issues/101)
