@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.122.0 (2026-11-26)
+
+* feat: Update tool versions (#105) ([eee111b](https://github.com/ops4life/terraform-toolkit-docker/commit/eee111b)), closes [#105](https://github.com/ops4life/terraform-toolkit-docker/issues/105)
+* ci: merge green Dependabot PRs with the shared auto-merge workflow ([e0e8c0e](https://github.com/ops4life/terraform-toolkit-docker/commit/e0e8c0e)), closes [ops4life/org-maintenance#55](https://github.com/ops4life/org-maintenance/issues/55)
+
 ## 1.121.0 (2026-11-23)
 
 * feat: Update tool versions (#102) ([21a82fb](https://github.com/ops4life/terraform-toolkit-docker/commit/21a82fb)), closes [#102](https://github.com/ops4life/terraform-toolkit-docker/issues/102)
